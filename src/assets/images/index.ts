@@ -5,6 +5,7 @@ import SettingOutlined from './settings-outlined.svg';
 import MapFilled from './map-filled.svg';
 import MapOutlined from './map-outlined.svg';
 import EarthIcon from './earth-icon.svg';
+import FilterIcon from './filter-outline-icon.svg';
 
 import SliderLanguages from './pic00languages.png';
 import SliderHandle from './pic01handlePhone.png';
@@ -30,6 +31,7 @@ export const AppIcons = {
   SettingFilled,
   SettingOutlined,
   EarthIcon,
+  FilterIcon,
 };
 
 export const SliderClips = {

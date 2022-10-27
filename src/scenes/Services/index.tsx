@@ -1,5 +1,5 @@
 import React, {FC, useEffect} from 'react';
-import {ActivityIndicator, View} from 'react-native';
+import {ActivityIndicator, Text, View} from 'react-native';
 import {ServicesList} from '@components/ServicesList';
 import {useDispatch, useSelector} from 'react-redux';
 import {getServicesDataAction} from '@store/actions/manageService';
@@ -24,6 +24,11 @@ export const Services: FC = () => {
       <ActivityIndicator size='large' />
     </View>
   ) : (
-    <ServicesList data={dataFromDb} />
+    <>
+      <View style={{backgroundColor: '#9ce6ff'}}>
+        <Text style={{fontSize: 24, textAlign: 'right'}}>Filter</Text>
+      </View>
+      <ServicesList data={dataFromDb} />
+    </>
   );
 };

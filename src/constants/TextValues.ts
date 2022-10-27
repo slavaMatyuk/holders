@@ -42,4 +42,6 @@ export const TextValues = {
 
   SuccessfullyUpload: 'New Service has been successfully uploaded',
   Onloading: 'Loading',
+
+  FiltersButtonLabel: 'Filters',
 };
