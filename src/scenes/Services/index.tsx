@@ -30,9 +30,9 @@ export const Services: FC = () => {
 
   const dispatch = useDispatch();
 
-  const saveFilterToAsyncStorage = async () => {
+  const saveFilterToAsyncStorage = async (data: FilterDataType) => {
     try {
-      AsyncStorage.setItem('FILTER', JSON.stringify(filter));
+      await AsyncStorage.setItem('FILTER', JSON.stringify(data));
     } catch (error) {
       console.log(error);
     }
@@ -53,7 +53,7 @@ export const Services: FC = () => {
 
   const handleFilterApply = (data: FilterDataType) => {
     dispatchFilter(data);
-    saveFilterToAsyncStorage();
+    saveFilterToAsyncStorage(data);
   };
 
   useEffect(() => {
