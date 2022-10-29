@@ -9,7 +9,7 @@ import {CustomModal} from '@components/CustomModal';
 import {mapTypeToLabel} from '@utils/helpers/mapTypeToLabel';
 import {serviceItemsTypes} from '@constants/ServiceItemsTypes';
 
-export const ServicesList: FC<Props> = data => {
+export const ServicesList: FC<Props> = ({data, filterData}) => {
   const renderItem: SectionListRenderItem<
     GetServiceDataResponse,
     ServiceCategory
@@ -28,7 +28,7 @@ export const ServicesList: FC<Props> = data => {
   return (
     <SafeAreaView style={styles.container}>
       <SectionList
-        sections={mapDataFromDb(data.data)}
+        sections={mapDataFromDb(data, filterData)}
         renderItem={renderItem}
         renderSectionHeader={renderHeader}
         keyExtractor={(_, index) => index.toString()}

@@ -44,4 +44,8 @@ export const TextValues = {
   Onloading: 'Loading',
 
   FiltersButtonLabel: 'Filters',
+  FilterFormTitle: 'Filter Services',
+  CheckAllItems: 'All Services',
+  EmptyFilterText: 'Nothing is checked',
+  ApplyFilterButton: 'Apply',
 };

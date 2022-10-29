@@ -1,5 +1,6 @@
 import {DropdownPickerItem} from '@components/DropdownPicker/types';
 import {TextValues} from '@constants/TextValues';
+import {FilterDataType} from '@scenes/Services/types';
 
 export const serviceItemsTypes: DropdownPickerItem[] = [
   {label: TextValues.DropdownLabelAuto, value: 'autoService'},
@@ -14,3 +15,18 @@ export const serviceItemsTypes: DropdownPickerItem[] = [
   {label: TextValues.DropdownLabelPharmacy, value: 'pharmacy'},
   {label: TextValues.DropdownLabelOthers, value: 'others'},
 ];
+
+export const initialTypes: FilterDataType = {
+  all: false,
+  autoService: true,
+  beauty: true,
+  education: true,
+  finances: true,
+  food: true,
+  hotel: true,
+  mall: true,
+  pharmacy: true,
+  sports: true,
+  store: true,
+  others: true,
+};

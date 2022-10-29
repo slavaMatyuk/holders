@@ -21,4 +21,11 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     height: '100%',
   },
+  filterButtonContainer: {
+    backgroundColor: THEME.APP_BG,
+    height: 42,
+    padding: 7,
+    paddingHorizontal: 22,
+    alignItems: 'flex-end',
+  },
 });
